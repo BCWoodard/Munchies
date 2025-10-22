@@ -31,21 +31,21 @@ struct RestaurantDetailCard: View {
             if isLoading {
                 ProgressView()
                     .progressViewStyle(.circular)
-                    .padding(.top, 8)
+                    .padding(.top, 12)
                     .frame(height: 35, alignment: .top)
                     .accessibilityIdentifier("detailStatusLoading")
             } else if let isOpen = isOpen {
                 Text(isOpen ? "Open" : "Closed")
                     .font(.helvetica(size: 18))
                     .foregroundColor(isOpen ? Color.positive : Color.negative)
-                    .padding(.top, 8)
+                    .padding(.top, 12)
                     .frame(height: 35, alignment: .top)
                     .accessibilityIdentifier("detailRestaurantStatus")
             } else {
                 Text("Status unavailable")
                     .font(.helvetica(size: 18))
                     .foregroundColor(.gray)
-                    .padding(.top, 8)
+                    .padding(.top, 12)
                     .frame(height: 35, alignment: .top)
                     .accessibilityIdentifier("detailRestaurantStatus")
             }
