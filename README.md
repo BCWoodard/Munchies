@@ -78,7 +78,8 @@ There were no specific instructions on how to handle restaurants with missing fi
 
 **RestaurantDetailCard**
 - Designed to handle multiple lines in restaurant names (e.g., "Wayne 'Chad Broski' Burgers")
-- Text wraps gracefully with proper line limiting
+- Text wraps gracefully but spacing is a bit off from Figma
+- Would discuss the issue with Design team to resolve
 
 ---
 
