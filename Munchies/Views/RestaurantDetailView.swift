@@ -81,7 +81,7 @@ struct RestaurantDetailView: View {
                     isLoading: viewModel.isLoading
                 )
                 .padding(.horizontal, 16)
-                .position(x: geometry.size.width / 2, y: (geometry.size.width * (220.0/375.0) + 18))
+                .position(x: geometry.size.width / 2, y: (geometry.size.width * (220.0/375.0) + 24))
             }
             .ignoresSafeArea(edges: [.top, .bottom])
         }
