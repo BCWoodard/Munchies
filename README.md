@@ -19,7 +19,7 @@ Thanks again for the time and consideration!
 - **Framework**: SwiftUI
 - **Base iOS Version**: 18.5
 - **Xcode Version**: 16.4
-  - I know I could have used Xcode 16+ but it isn't installed on my machine, so I used what I currently have available.
+  - I know I could have used Xcode 26+ but it isn't installed on my machine, so I used what I currently have available.
 - **Orientation**: Portrait mode only
 - **Architecture**: MVVM with protocol-based dependency injection
 
@@ -54,20 +54,20 @@ There were no specific instructions on how to handle restaurants with missing fi
 - Added a subtle loading animation:
   - Logo animates from top-center to top-left once data loads
   - List content fades in after the logo animation completes
-- Not required by spec, but improves the user experience
+- Not required by spec, but I thought it improved the user experience
 - In production, I would discuss any such additions with Product/UX before implementing
 
 ### RestaurantCardView
 
 **Shadow Rendering Workaround**
 - Figma shows the card background as white @ 40% opacity
-- Technical issue: SwiftUI doesn't render shadows correctly on semi-transparent views
+- Technical issue: SwiftUI doesn't render shadows very well on semi-transparent views
 - Solution: Place an opaque view behind the semi-transparent one and apply the shadow to the opaque layer
 - In production, I would discuss with designers about using a solid background color to avoid this engineering workaround
 
 **Vertical Spacing**
 - Figma designs show very tight vertical spacing between text elements in the card view
-- Implemented as specified, though slightly more breathing room might improve readability
+- Implemented as specified, though I thought a little more breathing room would improve readability
 
 ### RestaurantDetailView
 
